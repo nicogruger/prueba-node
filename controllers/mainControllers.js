@@ -1,6 +1,7 @@
 let mainControllers = {
-    bienvenida: function (req, res) {
-        res.send("Bienvenidos a la página principal");
+    index: (req, res) => {
+        return res.render("index");
     }
 };
+
 module.exports = mainControllers;
